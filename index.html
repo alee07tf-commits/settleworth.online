@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Settlement Calculators for Every Injury Claim | SettleWorth</title>
-<meta name="description" content="Free, neutral settlement calculator. Estimate your injury claim with the multiplier and per-diem methods, adjusted for your state. Average data, examples, FAQ. Not legal advice.">
+<title>SettleWorth — Free Settlement Calculators for Every Injury Claim</title>
+<meta name="description" content="Free, neutral settlement calculators for every injury claim. Estimate with the multiplier and per-diem methods, adjusted for your state. No sign-up. Not legal advice.">
 <link rel="canonical" href="https://settleworth.online/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="SettleWorth — Settlement Calculators">
-<meta property="og:description" content="Free, neutral settlement calculator. Estimate your injury claim with the multiplier and per-diem methods, adjusted for your state. Average data, examples, FAQ. Not legal advice.">
+<meta property="og:title" content="SettleWorth — Free Settlement Calculators for Every Injury Claim">
+<meta property="og:description" content="Free, neutral settlement calculators for every injury claim. Estimate with the multiplier and per-diem methods, adjusted for your state. No sign-up. Not legal advice.">
 <meta property="og:url" content="https://settleworth.online/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:image" content="https://settleworth.online/assets/og-image.png"><meta property="og:site_name" content="SettleWorth"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://settleworth.online/assets/og-image.png">
-<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "SettleWorth", "url": "https://settleworth.online/", "logo": "https://settleworth.online/assets/og-image.png", "description": "Neutral, free settlement-estimation calculators. Not a law firm."}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "SettleWorth", "url": "https://settleworth.online/", "potentialAction": {"@type": "SearchAction", "target": "https://settleworth.online/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
-<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "SettleWorth", "url": "https://settleworth.online/"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"><link rel="stylesheet" href="/assets/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebApplication","name":"Settlement Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free injury settlement calculators using multiplier and per-diem methods, adjusted for state comparative-negligence rules."}
 </script>
@@ -32,15 +32,16 @@
 <!-- ================= TOP BAR ================= -->
 <header class="topbar">
   <a class="brand" href="/"><span class="mark">S</span><span class="nm">Settle<b>Worth</b></span></a>
-  <nav class="topnav">
+  <nav class="topnav" id="topnav">
     <a href="/accidents/">Accidents</a>
     <a href="/personal-injury/">Personal injury</a>
     <a href="/workers-comp-settlement-calculator/">Workers&#39; comp</a>
     <a href="/injuries/">Injuries</a>
     <a href="/vehicle-value/">Vehicle value</a>
     <a href="/pain-and-suffering-settlement-calculator/">Pain &amp; suffering</a>
+    <a href="/wrongful-termination-settlement-calculator/">Wrongful termination</a>
   </nav>
-  <button class="menu-btn" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="topnav"><svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
 </header>
 
 <!-- ================= HERO + GENERAL CALCULATOR ================= -->
@@ -50,8 +51,8 @@
     <h1>Settlement calculators for every injury claim — <em>free and neutral</em></h1>
     <p class="lede">Pick your case type, enter your damages, and get an instant range built on real method — adjusted for your state. Free, no sign-up, and we're not a law firm.</p>
     <div class="trustbar">
-      <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Method: <b>multiplier &amp; per-diem</b></span>
-      <span class="trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14"/></svg><b>No sign-up · no data sold</b></span>
+      <span class="trust-item"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Method: <b>multiplier &amp; per-diem</b></span>
+      <span class="trust-item"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke-width="2.2"><path d="M5 12h14"/></svg><b>No sign-up · no data sold</b></span>
     </div>
   </div>
 </section>
@@ -69,45 +70,40 @@
     <div class="section-head">
       <p class="eyebrow-s">Browse</p>
       <h2 class="sec">Find your calculator</h2>
-      <p class="lead muted">Every claim type has its own calculator with average data, real examples, and state adjustments.</p>
+      <p class="lead muted">Every claim type has its own calculator with cited data and state adjustments.</p>
     </div>
     <div class="silo-grid">
       <a class="silo" href="/accidents/">
-        <span class="count">2</span>
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11M5 11h14v5H5zM7 16v2M17 16v2"/></svg></div>
-        <h3>Accidents</h3><p>Car, truck, motorcycle, pedestrian &amp; bicycle crashes.</p>
-        <span class="arrow">Explore<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11M5 11h14v5H5zM7 16v2M17 16v2"/></svg></div>
+        <h3>Accidents</h3><p>Car and truck accident calculators.</p>
+        <span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="silo" href="/personal-injury/">
-        <span class="count">3</span>
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A3.5 3.5 0 0 0 12 6 3.5 3.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></svg></div>
+        <div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A3.5 3.5 0 0 0 12 6 3.5 3.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></svg></div>
         <h3>Personal injury</h3><p>Slip &amp; fall, dog bite, premises &amp; general negligence.</p>
-        <span class="arrow">Explore<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="silo" href="/workers-comp-settlement-calculator/">
-        <span class="count">1</span>
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-        <h3>Workers' comp</h3><p>Workplace injuries, disability ratings &amp; benefit estimates.</p>
-        <span class="arrow">Explore<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
+        <h3>Workers' comp</h3><p>Estimate your work-injury settlement.</p>
+        <span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="silo" href="/injuries/">
-        <span class="count">1</span>
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
-        <h3>By body part</h3><p>Nerve damage, whiplash, back, shoulder, knee &amp; more.</p>
-        <span class="arrow">Explore<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zM5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+        <h3>By body part</h3><p>Nerve damage calculator — more body parts coming soon.</p>
+        <span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="silo" href="/vehicle-value/">
-        <span class="count">1</span>
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11M5 11h14v5H5z"/><path d="M16 16l4 4M20 16l-4 4"/></svg></div>
-        <h3>Property &amp; vehicle</h3><p>Diminished value (17c) &amp; total-loss claims.</p>
-        <span class="arrow">Explore<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11M5 11h14v5H5z"/><path d="M16 16l4 4M20 16l-4 4"/></svg></div>
+        <h3>Property &amp; vehicle</h3><p>Diminished value (17c) claim calculator.</p>
+        <span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="silo" href="/pain-and-suffering-settlement-calculator/">
-        <span class="count">2</span>
-        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <h3>Fees &amp; other</h3><p>Attorney fees, pain &amp; suffering, statute of limitations.</p>
-        <span class="arrow">Explore<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Pain &amp; suffering</h3><p>Value your non-economic damages.</p>
+        <span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
+      <a class="silo" href="/wrongful-termination-settlement-calculator/"><div class="ico"><svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div><h3>Wrongful termination</h3><p>Estimate an unlawful-firing payout.</p><span class="arrow">Explore<svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
     </div>
   </div>
 </section>
@@ -142,13 +138,13 @@
       <h2 class="sec">Settlement calculator FAQ</h2>
     </div>
     <div class="faq">
-      <div class="faq-item"><button class="faq-q">How accurate is a settlement calculator?</button>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">How accurate is a settlement calculator?</button>
         <div class="faq-a"><p>A calculator gives you a realistic range, not a guaranteed number. It applies the same methods professionals use — multiplier or per-diem for pain &amp; suffering, plus your state's fault rules — but the real outcome depends on evidence, insurance limits, and negotiation. Treat the result as a well-informed starting point.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Do I have to give my contact details to see a result?</button>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Do I have to give my contact details to see a result?</button>
         <div class="faq-a"><p>No. SettleWorth shows your estimate instantly, with no email or phone required. We're a neutral tool, not a lead-generation funnel for a law firm.</p></div></div>
-      <div class="faq-item"><button class="faq-q">What's the difference between the multiplier and per-diem methods?</button>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">What's the difference between the multiplier and per-diem methods?</button>
         <div class="faq-a"><p>The multiplier method values pain &amp; suffering as your medical costs times a factor of 1.5–5 based on severity. The per-diem method assigns a daily dollar value for each day of recovery. Our calculator lets you try both and compare.</p></div></div>
-      <div class="faq-item"><button class="faq-q">Does my state really change the payout?</button>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Does my state really change the payout?</button>
         <div class="faq-a"><p>Yes — significantly. States follow different comparative-negligence rules, and a few (Alabama, Maryland, North Carolina, Virginia and Washington D.C.) can bar recovery entirely if you share any fault. The calculator applies your state's rule for you.</p></div></div>
     </div>
   </div>
@@ -164,7 +160,7 @@
 <li><a href="/workers-comp-settlement-calculator/">Workers&#39; comp calculators</a></li>
 <li><a href="/injuries/">Injury calculators by body part</a></li>
 <li><a href="/vehicle-value/">Vehicle value calculators</a></li>
-<li><a href="/pain-and-suffering-settlement-calculator/">Pain &amp; suffering calculator</a></li></ul></div>
+<li><a href="/pain-and-suffering-settlement-calculator/">Pain &amp; suffering calculator</a></li><li><a href="/wrongful-termination-settlement-calculator/">Wrongful termination calculator</a></li></ul></div>
 <div><h4>How it works</h4><ul>
 <li><a href="/#method">The multiplier &amp; per-diem methods</a></li>
 <li><a href="/#data">Average settlement data</a></li>

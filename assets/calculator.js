@@ -38,7 +38,7 @@
 
   function fmt(n){ return "$" + Math.round(n).toLocaleString("en-US"); }
   function fmtK(n){
-    if(n>=1000000) return "$"+(n/1000000).toFixed(n%1000000?1:0)+"M";
+    if(n>=999500) return "$"+(n/1000000).toFixed(n%1000000?1:0)+"M";
     if(n>=1000) return "$"+Math.round(n/1000)+"K";
     return "$"+Math.round(n);
   }
@@ -48,11 +48,11 @@
   function arrow(){return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';}
   function warnIcon(){return '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>';}
   function money(id,label,hint,val){
-    return '<div class="field"><label>'+label+(hint?' <span class="hint">'+hint+'</span>':'')+'</label>'+
+    return '<div class="field"><label for="'+id+'">'+label+(hint?' <span class="hint">'+hint+'</span>':'')+'</label>'+
       '<div class="input-money"><input class="input" inputmode="numeric" id="'+id+'" value="'+(val?val.toLocaleString("en-US"):"")+'" placeholder="0"></div></div>';
   }
   function plain(id,label,hint,val){
-    return '<div class="field"><label>'+label+(hint?' <span class="hint">'+hint+'</span>':'')+'</label>'+
+    return '<div class="field"><label for="'+id+'">'+label+(hint?' <span class="hint">'+hint+'</span>':'')+'</label>'+
       '<input class="input" inputmode="numeric" id="'+id+'" value="'+(val||val===0?val:"")+'"></div>';
   }
   function stateOptions(sel){
@@ -120,7 +120,7 @@
     }
     function cell(k,v){return '<div class="cell"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>';}
     function resultShell(rangeHTML,sub,cells,noteText){
-      return '<div class="result-wrap"><div class="result">'+
+      return '<div class="result-wrap"><div class="result" role="status" aria-live="polite">'+
         '<div class="lab">Estimated '+(mode==="dv"?"diminished value":"settlement range")+'</div>'+rangeHTML+
         '<div class="sub">'+sub+'</div><div class="bd">'+cells+'</div>'+
         '<div class="state-note">'+warnIcon()+'<div>'+noteText+'</div></div></div>'+
