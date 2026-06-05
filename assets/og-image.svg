@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="SettleWorth - Free settlement calculators, not a law firm">
+  <title>SettleWorth - Free settlement calculators, not a law firm</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11151f"/>
+      <stop offset="1" stop-color="#0c0f16"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5cf6" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2f5cf6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background --dark -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Soft brand-blue glow top-right -->
+  <circle cx="1080" cy="120" r="360" fill="url(#glow)"/>
+  <!-- Subtle dotted grid hint -->
+  <g fill="#ffffff" opacity="0.04">
+    <circle cx="80" cy="540" r="3"/><circle cx="130" cy="540" r="3"/><circle cx="180" cy="540" r="3"/>
+    <circle cx="80" cy="490" r="3"/><circle cx="130" cy="490" r="3"/><circle cx="180" cy="490" r="3"/>
+  </g>
+
+  <!-- Brand lockup -->
+  <g transform="translate(90,90)">
+    <rect width="64" height="64" rx="16" fill="#0c0f16" stroke="#2f5cf6" stroke-width="2"/>
+    <path fill="#ffffff" d="M44.5 21.2c0-5.2-5.0-8.6-12.3-8.6-7.6 0-12.6 3.7-12.6 9.4 0 5.0 3.4 7.7 10.7 9.0l3.8 0.7c3.9 0.7 5.4 1.6 5.4 3.4 0 2.2-2.3 3.6-6.1 3.6-4.0 0-6.6-1.6-6.9-4.4h-7.4c0.2 6.1 5.4 9.9 13.9 9.9 8.2 0 13.6-3.9 13.6-9.9 0-5.1-3.3-7.8-10.9-9.1l-3.8-0.7c-3.7-0.6-5.2-1.5-5.2-3.3 0-2.0 2.1-3.3 5.5-3.3 3.5 0 5.6 1.4 5.9 3.6z"/>
+    <circle cx="48.5" cy="16.5" r="4.2" fill="#10a14b"/>
+    <text x="84" y="44" font-family="'Space Grotesk','Plus Jakarta Sans',Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="-0.5" fill="#ffffff">Settle<tspan fill="#2f5cf6">Worth</tspan></text>
+  </g>
+
+  <!-- Eyebrow pill -->
+  <g transform="translate(90,250)">
+    <rect width="246" height="40" rx="20" fill="#ffffff" opacity="0.08"/>
+    <circle cx="26" cy="20" r="5" fill="#10a14b"/>
+    <text x="44" y="26" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="1.5" fill="#cfd5e0">FREE &#183; NO SIGNUP</text>
+  </g>
+
+  <!-- Headline -->
+  <text x="88" y="370" font-family="'Space Grotesk','Plus Jakarta Sans',Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="-1.5" fill="#ffffff">Estimate your</text>
+  <text x="88" y="452" font-family="'Space Grotesk','Plus Jakarta Sans',Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="-1.5" fill="#ffffff">settlement <tspan fill="#2f5cf6">in seconds</tspan></text>
+
+  <!-- Tagline (required) -->
+  <text x="90" y="540" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-size="29" font-weight="500" fill="#98a1ad">Free settlement calculators <tspan fill="#6a7383">&#183;</tspan> not a law firm</text>
+
+  <!-- Bottom accent rule -->
+  <rect x="90" y="566" width="120" height="5" rx="2.5" fill="#10a14b"/>
+</svg>

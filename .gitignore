@@ -1,0 +1,4 @@
+# Internal / working files — not deployed
+_preview-*.html
+*.old.css
+_*.md

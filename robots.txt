@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /_preview-
+Disallow: /*.old.css$
+
+Sitemap: https://settleworth.online/sitemap.xml
