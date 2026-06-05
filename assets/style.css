@@ -505,3 +505,51 @@ img,svg,table,pre{max-width:100%;}
 .skip{position:absolute;left:-9999px;top:auto;}
 .skip:focus{left:16px;top:16px;z-index:200;background:var(--ink,#0c0f16);color:#fff;padding:10px 16px;border-radius:8px;}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.001ms !important;transition-duration:.001ms !important;scroll-behavior:auto !important;}}
+
+/* ============================================================
+   FIX UX/legibilidad — verificado con capturas 1366/390 (5-jun)
+   ============================================================ */
+/* FIX 1 — #related "More settlement calculators" legible sobre blanco */
+#related .state-links{gap:12px;margin-top:4px;}
+#related .state-links a{color:var(--acc-700);background:var(--acc-50);border:1px solid var(--acc-100);font-size:14.5px;font-weight:600;padding:10px 16px;border-radius:999px;}
+#related .state-links a:hover,#related .state-links a:focus-visible{color:#fff;background:var(--acc);border-color:var(--acc);}
+
+/* FIX 2 — legibilidad del cuerpo: medida ~68ch, ritmo, "See also" separado */
+.intro-band .wrap{max-width:760px;}
+.intro-band p{font-size:17px;line-height:1.7;max-width:68ch;margin:0 0 14px;}
+.intro-band p:last-child{margin-bottom:0;}
+.intro-band .see-also{font-size:15px;color:var(--muted);border-top:1px solid var(--line);margin-top:18px;padding-top:16px;}
+.intro-band .see-also b{color:var(--ink);}
+.intro-band .see-also a{font-weight:600;}
+.lead{max-width:68ch;}
+.faq-a p{max-width:68ch;line-height:1.7;}
+
+/* FIX 3 (CORREGIDO) — hero más compacto para que la calculadora suba al fold,
+   H1 sin desbordar en móvil, y tarjeta con marco propio */
+.hero{padding-top:26px;}
+.hero h1{font-size:clamp(30px,4.4vw,44px);line-height:1.12;overflow-wrap:break-word;}
+.hero .lead{overflow-wrap:break-word;}
+.calc-float .calc-card{border:1px solid var(--line);border-radius:var(--r-2xl);box-shadow:0 10px 34px rgba(12,15,22,.10);padding:24px;}
+.calc-float .calc-head{margin-bottom:14px;}
+.calc-float .steps-labels{margin-bottom:18px;}
+.calc-float .field{margin-bottom:14px;}
+@media(min-width:821px){
+  .hero[style]{padding-bottom:60px !important;}
+  .calc-float{margin-top:-56px;max-width:560px;}
+}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(25px,7vw,32px);}
+  .hero .lead{font-size:15.5px;line-height:1.6;}
+  .intro-band p{font-size:16px;line-height:1.72;}
+  .intro-band .see-also{font-size:14.5px;}
+  .lead{font-size:16px;}
+  .faq-a p{font-size:15px;}
+  .calc-float .calc-card{padding:18px 16px;}
+  .calc-float .steps-labels span{font-size:11px;}
+}
+
+/* FIX overflow móvil: H1 más contenido + breadcrumb envuelve */
+.breadcrumb{flex-wrap:wrap;}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(22px,6vw,28px);word-break:break-word;overflow-wrap:anywhere;}
+}
