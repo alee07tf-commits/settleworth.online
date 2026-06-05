@@ -553,3 +553,8 @@ img,svg,table,pre{max-width:100%;}
 @media(max-width:600px){
   .hero h1{font-size:clamp(22px,6vw,28px);word-break:break-word;overflow-wrap:anywhere;}
 }
+
+/* FIX breadcrumb clicable: las decoraciones del hero no deben capturar clics + migas visibles como enlaces */
+.hero::before,.hero::after{pointer-events:none;}
+.breadcrumb a{color:var(--acc-700);}
+.breadcrumb a:hover{color:var(--acc);text-decoration:underline;text-underline-offset:2px;}
