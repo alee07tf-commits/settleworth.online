@@ -6,5 +6,25 @@
     { "source": "/workers-comp/", "destination": "/workers-comp-settlement-calculator/", "permanent": true },
     { "source": "/fees-and-damages", "destination": "/pain-and-suffering-settlement-calculator/", "permanent": true },
     { "source": "/fees-and-damages/", "destination": "/pain-and-suffering-settlement-calculator/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }
+      ]
+    },
+    {
+      "source": "/(favicon.png|favicon.svg)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
   ]
 }
